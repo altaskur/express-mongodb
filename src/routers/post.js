@@ -3,7 +3,7 @@ const { dbConnection } = require("../database/conection");
 
 const router = express.Router();
 
-router.get('/', async (req, res) => {
+router.post('/', async (req, res) => {
 //   try {
 //     res.status(200).json(data);
 //   } catch (error) {

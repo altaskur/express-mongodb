@@ -1,0 +1,31 @@
+section.scoreWrapper{
+    height: 100%;
+    width: 100%;
+}
+section.scoreBoard{
+    display: flex;
+    flex-direction: row;
+    gap:24px;
+
+    height: 90%;
+    width: 100%;
+}
+
+section.scoreBoard section.name,
+section.scoreBoard section.score{
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+}
+section.scoreBoard section.name{
+    padding-right: 15px;
+    border-right-style: solid;
+    border-right-width: 15px;
+}
+
+section.scoreWrapper fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

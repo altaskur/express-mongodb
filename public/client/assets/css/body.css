@@ -1,0 +1,46 @@
+:root{
+    --bg-color:#EEE8DD;
+    --black:#333333;
+
+    color:#333333;
+    border-color: var(--black);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+p,
+a,
+a:link,
+a:active,
+a:visited,
+input{
+    color: var(--black);
+    font-family: 'Open Sans', sans-serif;
+
+    outline: none;
+    border:none;
+
+    border-color: var(--black);
+    background: var(--bg-color);
+    text-align: center;
+
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background: var(--bg-color);
+}
+
+fieldset{
+    border: none;
+}
+
+input{
+    border: solid;
+}
+
+.hidden{
+    display: none;
+}

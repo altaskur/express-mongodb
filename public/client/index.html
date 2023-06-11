@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Score Board</title>
+  </head>
+  <body>
+    <h1>Minesweeper</h1>
+    <main>
+      <section class="scoreWrapper">
+        <section class="scoreBoard">
+          <section class="name">
+            <h2>Name</h2>
+          </section>
+          <section class="score">
+            <h2>Score</h2>
+          </section>
+        </section>
+        <fieldset>
+          <input type="button" value="Add score" />
+        </fieldset>
+      </section>
+      <form action="/api/" method="post" class="hidden">
+        <h2>Add your score</h2>
+        <fieldset>
+          <input
+            class="number"
+            type="text"
+            name="name1"
+            maxlength="1"
+            autocomplete="off"
+            placeholder="a"
+            pattern="[A-Za-z]"
+            required
+            autofocus
+          />
+          <input
+            class="number"
+            type="text"
+            name="name2"
+            maxlength="1"
+            autocomplete="off"
+            placeholder="a"
+            pattern="[A-Za-z]"
+            required
+          />
+          <input
+            class="number"
+            type="text"
+            name="name3"
+            maxlength="1"
+            autocomplete="off"
+            placeholder="a"
+            pattern="[A-Za-z]"
+            required
+          />
+          <input
+            class="score"
+            type="text"
+            name="score"
+            inputmode="numeric"
+            pattern="\d{0,5}"
+            maxlength="5"
+            autocomplete="off"
+            placeholder="00000"
+            required
+          />
+        </fieldset>
+        <input type="submit" value="Add score" />
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
