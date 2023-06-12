@@ -1,14 +1,15 @@
 const express = require('express');
-const { dbConnection } = require("../database/conection");
-
+const Score = require('../models/score');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-//   try {
-//     res.status(200).json(data);
-//   } catch (error) {
-//     res.status(501).json({ status: error });
-//   }
-    dbConnection();
+
+    try {
+        const scores = await Score.find();
+        return res.json(scores);
+    } catch (error) {
+        console.error('Error al obtener las puntuaciones:', error);
+        return res.status(500).json({ error: 'Error al obtener las puntuaciones' });
+    }
 });
 module.exports = router;
