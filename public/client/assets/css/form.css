@@ -48,3 +48,9 @@ input[type="text"].score{
     width: 89px;
     margin-left: 18px;
 }
+fieldset.buttons{
+    display: flex;
+}
+i.bi{
+    cursor: pointer;
+}

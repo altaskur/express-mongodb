@@ -11,18 +11,12 @@ section.scoreBoard{
     width: 100%;
 }
 
-section.scoreBoard section.name,
-section.scoreBoard section.score{
-    height: 100%;
+section.scoreBoard section,
+section.scoreBoard section{
     width: 100%;
-
     text-align: center;
 }
-section.scoreBoard section.name{
-    padding-right: 15px;
-    border-right-style: solid;
-    border-right-width: 15px;
-}
+
 
 section.scoreWrapper fieldset{
     display: flex;

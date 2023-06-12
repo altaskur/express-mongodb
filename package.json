@@ -2,7 +2,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.1.4",
-    "eslint": "^8.42.0",
     "express": "^4.18.2",
     "mongoose": "^7.2.3",
     "nodemon": "^2.0.22"
@@ -24,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/altaskur/express-mongodb/issues"
   },
-  "homepage": "https://github.com/altaskur/express-mongodb#readme"
+  "homepage": "https://github.com/altaskur/express-mongodb#readme",
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
 }

@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <title>Score Board</title>
   </head>
   <body>
@@ -23,6 +28,10 @@
           </section>
           <section class="score">
             <h2>Score</h2>
+            <section class="data"></section>
+          </section>
+          <section class="icons">
+            <h2>Actions</h2>
             <section class="data"></section>
           </section>
         </section>
@@ -76,7 +85,12 @@
             required
           />
         </fieldset>
-        <input type="submit" value="Add score" />
+        <fieldset class="buttons">
+          <fieldset><input type="submit" value="Add score" /></fieldset>
+          <fieldset>
+            <input type="button" value="Close" class="close" />
+          </fieldset>
+        </fieldset>
       </form>
     </main>
     <script src="index.js"></script>
